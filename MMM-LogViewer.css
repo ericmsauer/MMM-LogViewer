@@ -1,0 +1,65 @@
+.mmm-logviewer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.mmm-logviewer-title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.mmm-logviewer-container {
+	border: 1px solid #444;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ffffff;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 12px;
+	line-height: 1.4;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.mmm-logviewer-line {
+	padding: 2px 5px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	word-wrap: break-word;
+	text-align: left;
+}
+
+.mmm-logviewer-line:last-child {
+	border-bottom: none;
+}
+
+
+
+.mmm-logviewer-no-data {
+	padding: 10px;
+	text-align: center;
+	font-style: italic;
+	color: #888;
+}
+
+
+
+/* Animation for new log entries */
+@keyframes logEntry {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.mmm-logviewer-line.new-entry {
+	animation: logEntry 0.3s ease-in-out;
+}

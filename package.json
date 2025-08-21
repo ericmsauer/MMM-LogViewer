@@ -1,0 +1,27 @@
+{
+  "name": "mmm-logviewer",
+  "version": "1.0.0",
+  "description": "A module for MagicMirror² to display the last N lines of a log file in real-time.",
+  "main": "MMM-LogViewer.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/MMM-LogViewer.git"
+  },
+  "keywords": [
+    "magicmirror",
+    "magicmirror2",
+    "log",
+    "file",
+    "viewer",
+    "tail"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/MMM-LogViewer/issues"
+  },
+  "homepage": "https://github.com/yourusername/MMM-LogViewer#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
